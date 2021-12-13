@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.layers {
+  position: relative;
+
+  height: 600px;
+  width: 600px;
+}
+
+.layers img,
+.layers div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: transform ease 1600ms;
+  transform-style: preserve-3d;
+}
+
+.layers .background {
+  height: 100%;
+  width: 100%;
+  background: gray;
+}
+
+.layers:hover img,
+.layers:hover div {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(30px);
+}
+
+.layers:hover .legs {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(60px);
+}
+
+.layers:hover .hands {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(90px);
+}
+
+.layers:hover .pants {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(120px);
+}
+
+.layers:hover .body {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(150px);
+}
+
+.layers:hover .jacket {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(180px);
+}
+
+.layers:hover .head,
+.layers:hover .eyes,
+.layers:hover .mouth {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(200px);
+}
+
+.layers:hover .hair {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(210px);
+}
+
+.layers:hover .hat {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(230px);
+}
+
+.layers:hover .board {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(240px);
+}
+
+.layers:hover .earrings {
+  transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(35px) translateY(0px) translateZ(220px);
+}
+
+@media (max-width: 700px) {
+  .layers {
+    position: relative;
+
+    height: 300px;
+    width: 300px;
+  }
+
+  .layers:hover .legs {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(40px);
+  }
+
+  .layers:hover .hands {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(55px);
+  }
+
+  .layers:hover .pants {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(70px);
+  }
+
+  .layers:hover .body {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(85px);
+  }
+
+  .layers:hover .jacket {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(100px);
+  }
+
+  .layers:hover .head,
+  .layers:hover .eyes,
+  .layers:hover .mouth {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(115px);
+  }
+
+  .layers:hover .hair {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(130px);
+  }
+
+  .layers:hover .hat {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(145px);
+  }
+
+  .layers:hover .board {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(160px);
+  }
+
+  .layers:hover .earrings {
+    transform: perspective(2000px) rotateX(45deg) rotateY(20deg) rotateZ(-25deg)
+      translateX(35px) translateY(0px) translateZ(170px);
+  }
+}
